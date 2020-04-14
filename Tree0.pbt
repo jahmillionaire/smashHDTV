@@ -14,11 +14,10 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 16940102053547858507
-  ChildIds: 16813558807825262224
-  ChildIds: 5505624639612583424
-  ChildIds: 10005074784157121906
-  ChildIds: 14982843161775482339
+  ChildIds: 12234317094988878051
+  ChildIds: 16328402258751305402
+  ChildIds: 13180335004985104395
+  ChildIds: 1609686958372120226
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,11 +30,90 @@ Objects {
   }
 }
 Objects {
+  Id: 1609686958372120226
+  Name: "John"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "John"
+  }
+}
+Objects {
+  Id: 13180335004985104395
+  Name: "Russ"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Russ"
+  }
+}
+Objects {
+  Id: 16328402258751305402
+  Name: "Map"
+  Transform {
+    Location {
+      Z: -50
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 10005074784157121906
+  ChildIds: 14982843161775482339
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 14982843161775482339
   Name: "Default Floor"
   Transform {
     Location {
-      Z: -50
     }
     Rotation {
     }
@@ -45,7 +123,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 16328402258751305402
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -74,7 +152,7 @@ Objects {
   Name: "Default Sky"
   Transform {
     Location {
-      Z: 700
+      Z: 750
     }
     Rotation {
     }
@@ -84,7 +162,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 16328402258751305402
   ChildIds: 13551641546322277000
   ChildIds: 7155168770677928712
   ChildIds: 10505154200474359396
@@ -409,9 +487,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5505624639612583424
-  Name: "Top Down Camera Settings"
+  Id: 12234317094988878051
+  Name: "Game Settings"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -419,6 +501,34 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 16940102053547858507
+  ChildIds: 16813558807825262224
+  ChildIds: 5505624639612583424
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5505624639612583424
+  Name: "Top Down Camera Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12234317094988878051
   ChildIds: 6513618656508369884
   ChildIds: 4155375022546940517
   UnregisteredParameters {
@@ -635,7 +745,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 12234317094988878051
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -662,7 +772,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 12234317094988878051
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
