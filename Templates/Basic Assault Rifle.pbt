@@ -7,7 +7,7 @@ Assets {
       RootId: 5545984700063622192
       Objects {
         Id: 5545984700063622192
-        Name: "Basic Assault Rifle"
+        Name: "test_rifle"
         Transform {
           Scale {
             X: 1
@@ -15,8 +15,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 1609686958372120226
         ChildIds: 6091570635518507984
+        ChildIds: 12400244542119703700
+        ChildIds: 11679580565365396971
         ChildIds: 17342228179914680811
         ChildIds: 6668276427409425227
         ChildIds: 14554342770677881249
@@ -79,7 +81,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 30
+            MaxAmmo: 999999
             AmmoType: "rounds"
             MultiShot: 1
             ProjectileSpeed: 25000
@@ -173,6 +175,103 @@ Assets {
           Animation: "2hand_rifle_shoot"
           KeyBinding_v2 {
             Value: "mc:egameaction:primaryaction"
+          }
+        }
+      }
+      Objects {
+        Id: 12400244542119703700
+        Name: "ST_weapon_script"
+        Transform {
+          Location {
+            X: 213.224991
+            Y: 333.217102
+            Z: -2.28881836e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5545984700063622192
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 16382832316095355119
+          }
+        }
+      }
+      Objects {
+        Id: 11679580565365396971
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: 210
+            Y: 330
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5545984700063622192
+        ChildIds: 8468498532768215316
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8468498532768215316
+        Name: "ST_client_weapon_script"
+        Transform {
+          Location {
+            X: 3.22499084
+            Y: 3.21710205
+            Z: -2.28881836e-05
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11679580565365396971
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:BasicAssaultRifle"
+            ObjectReference {
+              SubObjectId: 5545984700063622192
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5070785678076881939
           }
         }
       }
