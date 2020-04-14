@@ -66,6 +66,18 @@ Objects {
   ParentId: 1609686958372120226
   ChildIds: 10476911441755392135
   ChildIds: 16237594423190674725
+  ChildIds: 15955112801425619455
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DamageDealt"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:DamageDealt:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -74,6 +86,67 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 15955112801425619455
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1138312013245425150
+  ChildIds: 1154732530265719638
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1154732530265719638
+  Name: "ST_client_enemy_script"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15955112801425619455
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:tracking_enemy"
+      ObjectReference {
+        SelfId: 1138312013245425150
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15675916234427895800
+    }
   }
 }
 Objects {
@@ -96,6 +169,7 @@ Objects {
     }
   }
   ParentId: 1138312013245425150
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,6 +209,7 @@ Objects {
     }
   }
   ParentId: 1138312013245425150
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

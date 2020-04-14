@@ -40,7 +40,8 @@ function target_impacted(weapon, weaponInteraction)
         Damage.sourcePlayer = weaponOwner
 
   		 -- Apply damage to the enemy
-	    print("damaged "..target.name)
+  		target.parent:SetNetworkedCustomProperty("DamageDealt", 0)
+	    target.parent:SetNetworkedCustomProperty("DamageDealt", damage)
 
 		--[[spawn blood spray
 		local transform = weaponInteraction:GetHitResult():GetTransform()
