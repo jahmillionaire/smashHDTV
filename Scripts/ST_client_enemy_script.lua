@@ -1,14 +1,14 @@
-local ROOT = script:GetCustomProperty("tracking_enemy"):WaitForObject()
+local TEXT = script.parent
+local ROOT = script:GetCustomProperty("enemy"):WaitForObject()
 
 
---Event<CoreObject owner, string propertyName>
-function property_changed(target, property)
-	damage = ROOT:GetCustomProperty(property)
-	
-	if damage ~= 0 then
-		print(tostring(damage))
-		UI.ShowFlyUpText(tostring(damage), target:GetWorldPosition(), {duration = 1, color=Color.ORANGE, isBig=false})
+ROOT.serverUserData.health = 100
+
+function Tick(deltaTime)
+	if ROOT then
+		TEXT.text = tostring(ROOT.serverUserData.health)
+		if ROOT.serverUserData.health <= 0 then
+			ROOT.parent:Destroy()
+		end
 	end
 end
-
-ROOT.networkedPropertyChangedEvent:Connect(property_changed)

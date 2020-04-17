@@ -11,8 +11,8 @@ local ALLOW_CRITICAL_HITS = WEAPON:GetCustomProperty("AllowCriticalHits") or fal
 -- Handle an interaction and assign damage
 function target_impacted(weapon, weaponInteraction)
     --setup target info.
-    local target = weaponInteraction.targetObject
-	local owner = weaponInteraction.weaponOwner
+  local target = weaponInteraction.targetObject
+  local owner = weaponInteraction.weaponOwner
 	
 	--check if we hit an enemy mesh
 	if Object.IsValid(target) and target:IsA("StaticMesh") and target.name == "enemy" then
@@ -40,15 +40,8 @@ function target_impacted(weapon, weaponInteraction)
         Damage.sourcePlayer = weaponOwner
 
   		 -- Apply damage to the enemy
-  		target.parent:SetNetworkedCustomProperty("DamageDealt", 0)
-	    target.parent:SetNetworkedCustomProperty("DamageDealt", damage)
+      target.serverUserData.health = target.serverUserData.health - damage
 
-		--[[spawn blood spray
-		local transform = weaponInteraction:GetHitResult():GetTransform()
-		local hitResult = World.Raycast(transform:GetPosition() + transform:GetForwardVector()*-10, transform:GetPosition() + transform:GetForwardVector()*-450, {ignorePlayers=true})
-    	if hitResult then
-
-   		end]]--
    	end
 end
 
