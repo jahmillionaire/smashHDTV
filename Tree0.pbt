@@ -14,10 +14,12 @@ Objects {
       Z: 1
     }
   }
+  ChildIds: 6286107340805146384
   ChildIds: 12234317094988878051
   ChildIds: 16328402258751305402
   ChildIds: 13180335004985104395
   ChildIds: 1609686958372120226
+  ChildIds: 949424695062813547
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -27,6 +29,106 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 949424695062813547
+  Name: "Rails"
+  Transform {
+    Location {
+      X: -260
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 7050212472224747946
+  ChildIds: 13748463935952712246
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13748463935952712246
+  Name: "Cube - bottom aligned"
+  Transform {
+    Location {
+      Y: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 96.4
+      Y: 1
+      Z: 6.20000029
+    }
+  }
+  ParentId: 949424695062813547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7050212472224747946
+  Name: "Cube - bottom aligned"
+  Transform {
+    Location {
+      Y: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 96.4
+      Y: 1
+      Z: 6.20000029
+    }
+  }
+  ParentId: 949424695062813547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -152,6 +254,7 @@ Objects {
   Name: "Default Sky"
   Transform {
     Location {
+      X: -1896.57568
       Z: 750
     }
     Rotation {
@@ -519,6 +622,7 @@ Objects {
   Name: "Top Down Camera Settings"
   Transform {
     Location {
+      X: -2240.0752
     }
     Rotation {
     }
@@ -648,6 +752,7 @@ Objects {
     }
     RotationOffset {
       Pitch: -45
+      Yaw: -90
     }
     FieldOfView: 90
     ViewWidth: 1200
@@ -735,6 +840,7 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
+      X: -2000
       Z: 115
     }
     Rotation {
@@ -786,6 +892,54 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+    }
+  }
+}
+Objects {
+  Id: 6286107340805146384
+  Name: "Basic Game State Manager"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16086570097188718822
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Basic Game State Manager"
+        }
+        Overrides {
+          Name: "cs:LobbyHasDuration"
+          Bool: true
+        }
+        Overrides {
+          Name: "cs:LobbyDuration"
+          Float: 1
+        }
+        Overrides {
+          Name: "cs:RoundHasDuration"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:RoundEndDuration"
+          Float: 1
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13981782059423931432
     }
   }
 }
