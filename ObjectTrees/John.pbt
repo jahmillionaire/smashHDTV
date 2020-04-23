@@ -54,11 +54,11 @@ Objects {
   }
   Settings {
     PlayerMovementSettings {
-      WalkSpeed: 880
+      WalkSpeed: 1080
       MaxAcceleration: 2600
       WalkableFloorAngle: 44
       JumpMaxCount: 3
-      JumpVelocity: 700
+      JumpVelocity: 900
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
@@ -127,10 +127,10 @@ Objects {
   Settings {
     PlayerMovementSettings {
       WalkSpeed: 500
-      MaxAcceleration: 1600
+      MaxAcceleration: 200
       WalkableFloorAngle: 44
       JumpMaxCount: 2
-      JumpVelocity: 900
+      JumpVelocity: 600
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
@@ -199,11 +199,11 @@ Objects {
   Settings {
     IsDefault: true
     PlayerMovementSettings {
-      WalkSpeed: 640
-      MaxAcceleration: 1800
+      WalkSpeed: 960
+      MaxAcceleration: 540
       WalkableFloorAngle: 44
       JumpMaxCount: 2
-      JumpVelocity: 700
+      JumpVelocity: 600
       GroundFriction: 8
       GravityScale: 1.9
       MaxSwimSpeed: 420
@@ -220,7 +220,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:facemovement"
       }
-      DefaultRotationRate: 540
+      DefaultRotationRate: 200
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"

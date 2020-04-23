@@ -663,7 +663,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:IsCursorVisible"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsCursorVisible:tooltip"
