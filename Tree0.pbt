@@ -19,7 +19,8 @@ Objects {
   ChildIds: 16328402258751305402
   ChildIds: 13180335004985104395
   ChildIds: 1609686958372120226
-  ChildIds: 949424695062813547
+  ChildIds: 12482220134709297899
+  ChildIds: 18109325467598456795
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,11 +33,13 @@ Objects {
   }
 }
 Objects {
-  Id: 949424695062813547
-  Name: "Rails"
+  Id: 18109325467598456795
+  Name: "Simple Sketch Line Post Process"
   Transform {
     Location {
-      X: -260
+      X: 361.947906
+      Y: -167.97522
+      Z: -0.000122070313
     }
     Rotation {
     }
@@ -47,87 +50,110 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 7050212472224747946
-  ChildIds: 13748463935952712246
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Background Color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.5
+      }
+    }
+    Overrides {
+      Name: "bp:Multiply Line Color"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Crease Line Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Contour Line Color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Highlight Line Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Line Width"
+      Float: 1.44762802
+    }
+    Overrides {
+      Name: "bp:Ambient Occlusion Boost"
+      Float: 0.222011045
+    }
+    Overrides {
+      Name: "bp:Line Fade Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Line Fade End"
+      Float: 10
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13748463935952712246
-  Name: "Cube - bottom aligned"
-  Transform {
-    Location {
-      Y: -450
-    }
-    Rotation {
-    }
-    Scale {
-      X: 96.4
-      Y: 1
-      Z: 6.20000029
-    }
-  }
-  ParentId: 949424695062813547
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10990376863910711188
     }
   }
 }
 Objects {
-  Id: 7050212472224747946
-  Name: "Cube - bottom aligned"
+  Id: 12482220134709297899
+  Name: "Depth of Field Post Process"
   Transform {
     Location {
-      Y: 450
+      X: 348.284058
+      Y: -45.8183
     }
     Rotation {
     }
     Scale {
-      X: 96.4
+      X: 1
       Y: 1
-      Z: 6.20000029
+      Z: 1
     }
   }
-  ParentId: 949424695062813547
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Focal Distance"
+      Float: 0.324826509
+    }
+    Overrides {
+      Name: "bp:Depth Blur Radius"
+      Float: 32
+    }
+    Overrides {
+      Name: "bp:Depth Blur Distance For 50%"
+      Float: 20.937582
+    }
+    Overrides {
+      Name: "bp:Unbounded"
+      Bool: true
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
+  Blueprint {
+    BlueprintAsset {
+      Id: 10577491396371571795
     }
   }
 }
@@ -633,7 +659,6 @@ Objects {
     }
   }
   ParentId: 12234317094988878051
-  ChildIds: 6513618656508369884
   ChildIds: 4155375022546940517
   UnregisteredParameters {
     Overrides {
@@ -761,78 +786,6 @@ Objects {
     }
     MinPitch: -89
     MaxPitch: 89
-  }
-}
-Objects {
-  Id: 6513618656508369884
-  Name: "Top Down Player Settings"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5505624639612583424
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Settings {
-    IsDefault: true
-    PlayerMovementSettings {
-      WalkSpeed: 640
-      MaxAcceleration: 1800
-      WalkableFloorAngle: 44
-      JumpMaxCount: 1
-      JumpVelocity: 900
-      GroundFriction: 8
-      GravityScale: 1.9
-      MaxSwimSpeed: 420
-      Buoyancy: 1
-      TouchForceFactor: 1
-      BrakingDecelerationFlying: 600
-      MaxFlightSpeed: 600
-      MovementControlMode {
-        Value: "mc:emovementcontrolmode:viewrelative"
-      }
-      LookControlMode {
-        Value: "mc:elookcontrolmode:absolute_tocursor"
-      }
-      FacingMode {
-        Value: "mc:efacingmode:faceaimalways"
-      }
-      DefaultRotationRate: 540
-      SlideRotationRate: 20
-      LookAtCursorProjectionPlane {
-        Value: "mc:eprojectionplane:xy"
-      }
-      MountedMaxAcceleration: 1800
-      MountedWalkSpeed: 960
-      MountedJumpMaxCount: 1
-      MountedJumpVelocity: 900
-      HeadVisibleToSelf: true
-      IsSlideEnabled: true
-      IsCrouchEnabled: true
-      IsJumpEnabled: true
-      CanMoveForward: true
-      CanMoveBackward: true
-      CanMoveLeft: true
-      CanMoveRight: true
-      AbilityAimMode {
-        Value: "mc:eabilityaimmode:lookrelative"
-      }
-      AppearanceChannelingTime: 2
-      MountChannelingTime: 2
-    }
   }
 }
 Objects {
