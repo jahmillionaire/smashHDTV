@@ -40,11 +40,11 @@ Assets {
         Transform {
           Location {
             X: -200
-            Y: -280
+            Y: -200
             Z: 10
           }
           Rotation {
-            Yaw: 45.0000839
+            Yaw: 50.0001106
           }
           Scale {
             X: 1.1
@@ -80,16 +80,16 @@ Assets {
         Transform {
           Location {
             X: 230
-            Y: -250
+            Y: -270
             Z: 10
           }
           Rotation {
             Yaw: -123.749863
           }
           Scale {
-            X: 1.80000007
-            Y: 2.10000014
-            Z: 1.30000007
+            X: 1.5
+            Y: 2
+            Z: 1.25
           }
         }
         ParentId: 9058913273559692997
@@ -157,17 +157,17 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 270
-            Y: 90
+            X: 220
+            Y: 130
             Z: 10
           }
           Rotation {
-            Yaw: 33.7500839
+            Yaw: 13.7501545
           }
           Scale {
-            X: 0.4
-            Y: 2.10000014
-            Z: 1.1
+            X: 0.5
+            Y: 2.5
+            Z: 1
           }
         }
         ParentId: 9058913273559692997
@@ -198,16 +198,16 @@ Assets {
         Transform {
           Location {
             X: -20
-            Y: 240
+            Y: 220
             Z: 10
           }
           Rotation {
-            Yaw: -56.2498779
+            Yaw: -121.249878
           }
           Scale {
             X: 0.4
             Y: 2.10000014
-            Z: 0.5
+            Z: 0.75
           }
         }
         ParentId: 9058913273559692997
@@ -277,8 +277,8 @@ Assets {
         Transform {
           Location {
             X: -240
-            Y: 240
-            Z: 10
+            Y: 220
+            Z: -20
           }
           Rotation {
           }

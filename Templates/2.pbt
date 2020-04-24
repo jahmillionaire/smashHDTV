@@ -38,15 +38,15 @@ Assets {
         Transform {
           Location {
             X: -120
-            Y: 200
-            Z: 10
+            Y: 220
+            Z: 10.7472839
           }
           Rotation {
             Yaw: 179.999893
           }
           Scale {
-            X: 0.4
-            Y: 4.00000048
+            X: 0.5
+            Y: 3.5
             Z: 2.89999938
           }
         }
@@ -78,14 +78,14 @@ Assets {
         Transform {
           Location {
             X: 130
-            Y: 200
-            Z: 60
+            Y: 180
+            Z: 17.2384949
           }
           Rotation {
           }
           Scale {
             X: 0.4
-            Y: 4.00000048
+            Y: 4.5
             Z: 1
           }
         }
@@ -117,14 +117,14 @@ Assets {
         Transform {
           Location {
             X: 130
-            Y: -200
+            Y: -220
             Z: 10
           }
           Rotation {
           }
           Scale {
             X: 0.4
-            Y: 4.00000048
+            Y: 3.5
             Z: 2.89999938
           }
         }
@@ -156,15 +156,15 @@ Assets {
         Transform {
           Location {
             X: -119.999939
-            Y: -200.000061
-            Z: 60
+            Y: -180
+            Z: 14.5817261
           }
           Rotation {
             Yaw: 179.999893
           }
           Scale {
-            X: 0.4
-            Y: 4.00000048
+            X: 0.5
+            Y: 4.5
             Z: 1
           }
         }

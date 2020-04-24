@@ -22,6 +22,7 @@ Assets {
         ChildIds: 15208318492526465414
         ChildIds: 15458191159090347125
         ChildIds: 3550566661025903696
+        ChildIds: 13736619099873850196
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -196,16 +197,16 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 280
-            Y: 100
+            X: 90
+            Y: 80
             Z: 10
           }
           Rotation {
           }
           Scale {
             X: 0.4
-            Y: 5.1
-            Z: 3.50000119
+            Y: 3
+            Z: 1
           }
         }
         ParentId: 8699088604637145983
@@ -245,6 +246,45 @@ Assets {
             X: 0.4
             Y: 3.10000014
             Z: 1.69999993
+          }
+        }
+        ParentId: 8699088604637145983
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17609149353171719671
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13736619099873850196
+        Name: "Cube"
+        Transform {
+          Location {
+            X: 90
+            Y: 340
+            Z: 10
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.4
+            Y: 0.25
+            Z: 1
           }
         }
         ParentId: 8699088604637145983
